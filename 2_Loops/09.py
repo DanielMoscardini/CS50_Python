@@ -1,7 +1,8 @@
 fellowship = [
-    {'Frodo': 'Hobbit', 'Weapon': 'Sting'},
-    {'Gandalf': 'Maia', 'Weapon': 'White Staff'},
-    {'Aragorn': 'Numenorian', 'Weapon': 'Anduril'},
-    {'Legolas': 'Forest Elf', 'Weapon': 'Lothlorien Bow'}
+    {'race': 'Hobbit', 'Weapon': 'Sting'},
+    {'race': 'Maia', 'Weapon': 'White Staff'},
+    {'race': 'Numenorian', 'Weapon': 'Anduril'},
+    {'race': 'Forest Elf', 'Weapon': 'Lothlorien Bow'}
 ]
-print(fellowship[0]['Frodo'])
+for race in fellowship:
+    print(f'Race: {race['race']} - Weapon: {race['Weapon']}')
